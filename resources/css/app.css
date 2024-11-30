@@ -1,3 +1,72 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* LOGIN */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4caf50;
+  }
+.box {
+    display: flex;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}    
+
+.animation-box{
+    padding-top: 30px;
+}
+
+.login-box {
+    padding: 30px;
+    min-width: 400px;
+    text-align: center;
+}
+.login-box h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Responsividade para telas menores (max-width: 768px) */
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column; /* Empilha os elementos verticalmente em dispositivos móveis */
+        padding: 20px;
+    }
+
+    /* Esconde a animação */
+    .animation-box {
+        display: none;
+    }
+
+    .login-box {
+        padding: 20px;
+        min-width: 90%;
+    }
+
+    .login-box img {
+        width: 150px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (max-width: 480px) */
+@media (max-width: 480px) {
+    .box {
+        padding: 15px;
+    }
+
+    .login-box {
+        padding: 15px;
+    }
+
+    .login-box img {
+        width: 120px;
+    }
+}
+
+/* END LOGIN */
